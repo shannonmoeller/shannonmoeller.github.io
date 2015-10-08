@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>{{#if file.meta.title}}{{ file.meta.title }} | {{/if}}{{ data.site.title }}</title>
+	<title>{{ data.site.title }}{{ file.meta.title }}</title>
 
 	<link rel="author" href="http://www.shannonmoeller.com/humans.txt" />
 	<link rel="canonical" href="{{ data.site.canonical }}{{ file.meta.canonical }}" />
@@ -14,9 +14,8 @@
 </head>
 <body>
 	<div class="site">
-
 		<header class="site-hd">
-			<h1 class="site-logo">
+			<h1 class="logo">
 				<a class="aspect aspect_3x1" href="/">
 					<svg class="aspect-bd" aria-hidden="true">
 						<use xlink:href="/assets/media/images/icons.svg?v={{ util.pkg.version }}#logo"></use>
@@ -33,7 +32,6 @@
 		<footer class="site-ft">
 			&copy; {{ data.site.author.name }}
 		</footer>
-
 	</div> <!-- /site -->
 
 	{{#block "scripts"}}

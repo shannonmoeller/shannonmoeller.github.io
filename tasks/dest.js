@@ -1,6 +1,5 @@
 import cli from './util/cli';
 import env from './util/env';
-import fs from './util/fs';
 import plug from './util/plug';
 import gulp from 'gulp';
 import del from 'del';
@@ -15,14 +14,6 @@ let isServing = false,
 
 gulp.task('dest:clean', function () {
 	del.sync(paths.dest);
-});
-
-gulp.task('dest:deploy', function () {
-	return fs
-		.src(paths.deploy)
-		.pipe(plug.ghPages({
-			branch: 'master'
-		}));
 });
 
 gulp.task('dest:serve', function () {

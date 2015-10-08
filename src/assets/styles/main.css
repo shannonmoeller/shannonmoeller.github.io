@@ -10,21 +10,22 @@
 @import './base/html.css';
 @import './base/svg.css';
 
-/* Core */
-@import './core/aspect.css';
-@import './core/box.css';
-@import './core/btn.css';
-@import './core/grid.css';
-@import './core/hdg.css';
-@import './core/hList.css';
-@import './core/link.css';
-@import './core/semantic.css';
-@import './core/spread.css';
+/* Generics */
+@import './generics/aspect.css';
+@import './generics/box.css';
+@import './generics/btn.css';
+@import './generics/grid.css';
+@import './generics/hdg.css';
+@import './generics/hList.css';
+@import './generics/link.css';
+@import './generics/semantic.css';
+@import './generics/spread.css';
 
-/* Modules */
-@import './modules/site.css';
+/* Specifics */
+@import './specifics/logo.css';
+@import './specifics/site.css';
 
-/* Util */
-@import './util/hidden.css';
-@import './util/txt.css';
-@import './util/vr.css';
+/* Utils */
+@import './utils/hidden.css';
+@import './utils/txt.css';
+@import './utils/vr.css';
