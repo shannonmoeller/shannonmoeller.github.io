@@ -1,7 +1,9 @@
 // Polyfills
-import svg4everybody from 'svg4everybody/dist/svg4everybody';
+import 'core-js/shim';
+import 'document-register-element';
+import 'whatwg-fetch';
+import './polyfill/matches';
+import './polyfill/svg';
 
 // Elements
 import '../elements/base-element/element';
-
-svg4everybody();
